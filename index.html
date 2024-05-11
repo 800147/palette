@@ -37,6 +37,7 @@
         height: var(--size);
         border-radius: 100%;
         margin: calc(var(--size) / -2);
+        background-color: rgb(var(--r, 0), var(--g, 0), var(--b, 0));
         transform: translate(
           calc(50vw + var(--rx, 0px) + var(--gx, 0px) + var(--bx, 0px)),
           calc(50vh + var(--ry, 0px) + var(--gy, 0px) + var(--by, 0px))
@@ -62,113 +63,122 @@
       }
 
       [id*="r5"] {
+        --r: 85;
         --ry: calc(cos(0deg) * var(--step));
         --rx: calc(sin(0deg) * var(--step));
       }
       [id*="ra"] {
+        --r: 170;
         --ry: calc(cos(0deg) * var(--step) * 2);
         --rx: calc(sin(0deg) * var(--step) * 2);
       }
       [id*="rf"] {
+        --r: 255;
         --ry: calc(cos(0deg) * var(--step) * 3);
         --rx: calc(sin(0deg) * var(--step) * 3);
       }
 
       [id*="g5"] {
+        --g: 85;
         --gy: calc(cos(120deg) * var(--step));
         --gx: calc(sin(120deg) * var(--step));
       }
       [id*="ga"] {
+        --g: 170;
         --gy: calc(cos(120deg) * var(--step) * 2);
         --gx: calc(sin(120deg) * var(--step) * 2);
       }
       [id*="gf"] {
+        --g: 255;
         --gy: calc(cos(120deg) * var(--step) * 3);
         --gx: calc(sin(120deg) * var(--step) * 3);
       }
 
       [id*="b5"] {
+        --b: 85;
         --by: calc(cos(-120deg) * var(--step));
         --bx: calc(sin(-120deg) * var(--step));
       }
       [id*="ba"] {
+        --b: 170;
         --by: calc(cos(-120deg) * var(--step) * 2);
         --bx: calc(sin(-120deg) * var(--step) * 2);
       }
       [id*="bf"] {
+        --b: 255;
         --by: calc(cos(-120deg) * var(--step) * 3);
         --bx: calc(sin(-120deg) * var(--step) * 3);
       }
     </style>
   </head>
   <body>
-    <div class="Color" id="r0g0b0" style="background-color: #000"></div>
-    <div class="Color" id="r0g0b5" style="background-color: #005"></div>
-    <div class="Color" id="r0g0ba" style="background-color: #00a"></div>
-    <div class="Color" id="r0g0bf" style="background-color: #00f"></div>
-    <div class="Color" id="r0g5b0" style="background-color: #050"></div>
-    <div class="Color" id="r0g5b5" style="background-color: #055"></div>
-    <div class="Color" id="r0g5ba" style="background-color: #05a"></div>
-    <div class="Color" id="r0g5bf" style="background-color: #05f"></div>
-    <div class="Color" id="r0gab0" style="background-color: #0a0"></div>
-    <div class="Color" id="r0gab5" style="background-color: #0a5"></div>
-    <div class="Color" id="r0gaba" style="background-color: #0aa"></div>
-    <div class="Color" id="r0gabf" style="background-color: #0af"></div>
-    <div class="Color" id="r0gfb0" style="background-color: #0f0"></div>
-    <div class="Color" id="r0gfb5" style="background-color: #0f5"></div>
-    <div class="Color" id="r0gfba" style="background-color: #0fa"></div>
-    <div class="Color" id="r0gfbf" style="background-color: #0ff"></div>
+    <div class="Color" id="r0g0b0"></div>
+    <div class="Color" id="r0g0b5"></div>
+    <div class="Color" id="r0g0ba"></div>
+    <div class="Color" id="r0g0bf"></div>
+    <div class="Color" id="r0g5b0"></div>
+    <div class="Color" id="r0g5b5"></div>
+    <div class="Color" id="r0g5ba"></div>
+    <div class="Color" id="r0g5bf"></div>
+    <div class="Color" id="r0gab0"></div>
+    <div class="Color" id="r0gab5"></div>
+    <div class="Color" id="r0gaba"></div>
+    <div class="Color" id="r0gabf"></div>
+    <div class="Color" id="r0gfb0"></div>
+    <div class="Color" id="r0gfb5"></div>
+    <div class="Color" id="r0gfba"></div>
+    <div class="Color" id="r0gfbf"></div>
 
-    <div class="Color" id="r5g0b0" style="background-color: #500"></div>
-    <div class="Color" id="r5g0b5" style="background-color: #505"></div>
-    <div class="Color" id="r5g0ba" style="background-color: #50a"></div>
-    <div class="Color" id="r5g0bf" style="background-color: #50f"></div>
-    <div class="Color" id="r5g5b0" style="background-color: #550"></div>
-    <div class="Color" id="r5g5b5" style="background-color: #555"></div>
-    <div class="Color" id="r5g5ba" style="background-color: #55a"></div>
-    <div class="Color" id="r5g5bf" style="background-color: #55f"></div>
-    <div class="Color" id="r5gab0" style="background-color: #5a0"></div>
-    <div class="Color" id="r5gab5" style="background-color: #5a5"></div>
-    <div class="Color" id="r5gaba" style="background-color: #5aa"></div>
-    <div class="Color" id="r5gabf" style="background-color: #5af"></div>
-    <div class="Color" id="r5gfb0" style="background-color: #5f0"></div>
-    <div class="Color" id="r5gfb5" style="background-color: #5f5"></div>
-    <div class="Color" id="r5gfba" style="background-color: #5fa"></div>
-    <div class="Color" id="r5gfbf" style="background-color: #5ff"></div>
+    <div class="Color" id="r5g0b0"></div>
+    <div class="Color" id="r5g0b5"></div>
+    <div class="Color" id="r5g0ba"></div>
+    <div class="Color" id="r5g0bf"></div>
+    <div class="Color" id="r5g5b0"></div>
+    <div class="Color" id="r5g5b5"></div>
+    <div class="Color" id="r5g5ba"></div>
+    <div class="Color" id="r5g5bf"></div>
+    <div class="Color" id="r5gab0"></div>
+    <div class="Color" id="r5gab5"></div>
+    <div class="Color" id="r5gaba"></div>
+    <div class="Color" id="r5gabf"></div>
+    <div class="Color" id="r5gfb0"></div>
+    <div class="Color" id="r5gfb5"></div>
+    <div class="Color" id="r5gfba"></div>
+    <div class="Color" id="r5gfbf"></div>
 
-    <div class="Color" id="rag0b0" style="background-color: #a00"></div>
-    <div class="Color" id="rag0b5" style="background-color: #a05"></div>
-    <div class="Color" id="rag0ba" style="background-color: #a0a"></div>
-    <div class="Color" id="rag0bf" style="background-color: #a0f"></div>
-    <div class="Color" id="rag5b0" style="background-color: #a50"></div>
-    <div class="Color" id="rag5b5" style="background-color: #a55"></div>
-    <div class="Color" id="rag5ba" style="background-color: #a5a"></div>
-    <div class="Color" id="rag5bf" style="background-color: #a5f"></div>
-    <div class="Color" id="ragab0" style="background-color: #aa0"></div>
-    <div class="Color" id="ragab5" style="background-color: #aa5"></div>
-    <div class="Color" id="ragaba" style="background-color: #aaa"></div>
-    <div class="Color" id="ragabf" style="background-color: #aaf"></div>
-    <div class="Color" id="ragfb0" style="background-color: #af0"></div>
-    <div class="Color" id="ragfb5" style="background-color: #af5"></div>
-    <div class="Color" id="ragfba" style="background-color: #afa"></div>
-    <div class="Color" id="ragfbf" style="background-color: #aff"></div>
+    <div class="Color" id="rag0b0"></div>
+    <div class="Color" id="rag0b5"></div>
+    <div class="Color" id="rag0ba"></div>
+    <div class="Color" id="rag0bf"></div>
+    <div class="Color" id="rag5b0"></div>
+    <div class="Color" id="rag5b5"></div>
+    <div class="Color" id="rag5ba"></div>
+    <div class="Color" id="rag5bf"></div>
+    <div class="Color" id="ragab0"></div>
+    <div class="Color" id="ragab5"></div>
+    <div class="Color" id="ragaba"></div>
+    <div class="Color" id="ragabf"></div>
+    <div class="Color" id="ragfb0"></div>
+    <div class="Color" id="ragfb5"></div>
+    <div class="Color" id="ragfba"></div>
+    <div class="Color" id="ragfbf"></div>
 
-    <div class="Color" id="rfg0b0" style="background-color: #f00"></div>
-    <div class="Color" id="rfg0b5" style="background-color: #f05"></div>
-    <div class="Color" id="rfg0ba" style="background-color: #f0a"></div>
-    <div class="Color" id="rfg0bf" style="background-color: #f0f"></div>
-    <div class="Color" id="rfg5b0" style="background-color: #f50"></div>
-    <div class="Color" id="rfg5b5" style="background-color: #f55"></div>
-    <div class="Color" id="rfg5ba" style="background-color: #f5a"></div>
-    <div class="Color" id="rfg5bf" style="background-color: #f5f"></div>
-    <div class="Color" id="rfgab0" style="background-color: #fa0"></div>
-    <div class="Color" id="rfgab5" style="background-color: #fa5"></div>
-    <div class="Color" id="rfgaba" style="background-color: #faa"></div>
-    <div class="Color" id="rfgabf" style="background-color: #faf"></div>
-    <div class="Color" id="rfgfb0" style="background-color: #ff0"></div>
-    <div class="Color" id="rfgfb5" style="background-color: #ff5"></div>
-    <div class="Color" id="rfgfba" style="background-color: #ffa"></div>
-    <div class="Color" id="rfgfbf" style="background-color: #fff"></div>
+    <div class="Color" id="rfg0b0"></div>
+    <div class="Color" id="rfg0b5"></div>
+    <div class="Color" id="rfg0ba"></div>
+    <div class="Color" id="rfg0bf"></div>
+    <div class="Color" id="rfg5b0"></div>
+    <div class="Color" id="rfg5b5"></div>
+    <div class="Color" id="rfg5ba"></div>
+    <div class="Color" id="rfg5bf"></div>
+    <div class="Color" id="rfgab0"></div>
+    <div class="Color" id="rfgab5"></div>
+    <div class="Color" id="rfgaba"></div>
+    <div class="Color" id="rfgabf"></div>
+    <div class="Color" id="rfgfb0"></div>
+    <div class="Color" id="rfgfb5"></div>
+    <div class="Color" id="rfgfba"></div>
+    <div class="Color" id="rfgfbf"></div>
 
     <a class="About" href="./about.html">about</a>
 
