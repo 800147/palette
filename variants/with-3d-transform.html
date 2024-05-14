@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6-bit RGB color palette</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="../script.js"></script>
+
+    <style>
+      .Color {
+        --magic-number: 35.25deg;
+        transform: rotateX(var(--magic-number)) rotateY(-45deg)
+          translate3d(
+            calc(var(--g, 0) * 0.2235vmin),
+            calc(var(--r, 0) * 0.2235vmin),
+            calc(var(--b, 0) * 0.2235vmin)
+          )
+          rotateY(45deg) rotateX(calc(var(--magic-number) * -1));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Color" id="r0g0b0"></div>
+    <div class="Color" id="r0g0b5"></div>
+    <div class="Color" id="r0g0ba"></div>
+    <div class="Color" id="r0g0bf"></div>
+    <div class="Color" id="r0g5b0"></div>
+    <div class="Color" id="r0g5b5"></div>
+    <div class="Color" id="r0g5ba"></div>
+    <div class="Color" id="r0g5bf"></div>
+    <div class="Color" id="r0gab0"></div>
+    <div class="Color" id="r0gab5"></div>
+    <div class="Color" id="r0gaba"></div>
+    <div class="Color" id="r0gabf"></div>
+    <div class="Color" id="r0gfb0"></div>
+    <div class="Color" id="r0gfb5"></div>
+    <div class="Color" id="r0gfba"></div>
+    <div class="Color" id="r0gfbf"></div>
+
+    <div class="Color" id="r5g0b0"></div>
+    <div class="Color" id="r5g0b5"></div>
+    <div class="Color" id="r5g0ba"></div>
+    <div class="Color" id="r5g0bf"></div>
+    <div class="Color" id="r5g5b0"></div>
+    <div class="Color" id="r5g5b5"></div>
+    <div class="Color" id="r5g5ba"></div>
+    <div class="Color" id="r5g5bf"></div>
+    <div class="Color" id="r5gab0"></div>
+    <div class="Color" id="r5gab5"></div>
+    <div class="Color" id="r5gaba"></div>
+    <div class="Color" id="r5gabf"></div>
+    <div class="Color" id="r5gfb0"></div>
+    <div class="Color" id="r5gfb5"></div>
+    <div class="Color" id="r5gfba"></div>
+    <div class="Color" id="r5gfbf"></div>
+
+    <div class="Color" id="rag0b0"></div>
+    <div class="Color" id="rag0b5"></div>
+    <div class="Color" id="rag0ba"></div>
+    <div class="Color" id="rag0bf"></div>
+    <div class="Color" id="rag5b0"></div>
+    <div class="Color" id="rag5b5"></div>
+    <div class="Color" id="rag5ba"></div>
+    <div class="Color" id="rag5bf"></div>
+    <div class="Color" id="ragab0"></div>
+    <div class="Color" id="ragab5"></div>
+    <div class="Color" id="ragaba"></div>
+    <div class="Color" id="ragabf"></div>
+    <div class="Color" id="ragfb0"></div>
+    <div class="Color" id="ragfb5"></div>
+    <div class="Color" id="ragfba"></div>
+    <div class="Color" id="ragfbf"></div>
+
+    <div class="Color" id="rfg0b0"></div>
+    <div class="Color" id="rfg0b5"></div>
+    <div class="Color" id="rfg0ba"></div>
+    <div class="Color" id="rfg0bf"></div>
+    <div class="Color" id="rfg5b0"></div>
+    <div class="Color" id="rfg5b5"></div>
+    <div class="Color" id="rfg5ba"></div>
+    <div class="Color" id="rfg5bf"></div>
+    <div class="Color" id="rfgab0"></div>
+    <div class="Color" id="rfgab5"></div>
+    <div class="Color" id="rfgaba"></div>
+    <div class="Color" id="rfgabf"></div>
+    <div class="Color" id="rfgfb0"></div>
+    <div class="Color" id="rfgfb5"></div>
+    <div class="Color" id="rfgfba"></div>
+    <div class="Color" id="rfgfbf"></div>
+
+    <div class="Preview">
+      <div class="Preview-LightText">6-Bit</div>
+      <div class="Preview-DarkText">Color</div>
+      <div class="Preview-LightBack">Super</div>
+      <div class="Preview-DarkBack">Tool!</div>
+    </div>
+
+    <div class="Message">
+      "<span class="Message-Color"></span>" is copied to clipboard
+    </div>
+
+    <a class="About" href="../about.html">about</a>
+  </body>
+</html>
