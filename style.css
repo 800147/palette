@@ -216,6 +216,8 @@ body {
   position: absolute;
   bottom: 1lh;
   left: 2ch;
+  /* This color was picked using this exact tool! Own dog food is pretty good :) */
+  color: #aaa;
 }
 
 /* Message */
