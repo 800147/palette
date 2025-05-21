@@ -2,4 +2,6 @@
 
 ![icon](./favicon.svg)
 
-[https://800147.github.io/palette/about](https://800147.github.io/palette/about)
+6-bit RGB color palette visualization.
+
+Description: <https://800147.github.io/palette/about>
